@@ -7,7 +7,7 @@ daily_average = {}
 min_daily_average = {}
 max_daily_average = {}
 
-input_file = csv.DictReader(open("crypto_weekly_marketcap.csv"))
+input_file = csv.DictReader(open("coin-dance-market-cap-weekly-2.csv"))
 for row in input_file:
     year = pd.to_datetime(row['Date']).year
     print(year)
@@ -35,7 +35,7 @@ Max = list(max_daily_average.values())
 #pyplot.bar(range(len(daily_average)), values, tick_label=keys)
 #pyplot.show()
 
-n=7
+n=8
 r = np.arange(n)
 width = 0.25
 
@@ -54,7 +54,7 @@ pyplot.ylabel("USD Millions")
 pyplot.title("Min-Max Range for Ransomware Payment Using Crypto Currency Per Year")
   
 # plt.grid(linestyle='--')
-pyplot.xticks(r + width/2,['2016', '2017', '2018','2019','2020','2021', '2022'])
+pyplot.xticks(r + width/2,['2016', '2017', '2018','2019','2020','2021', '2022', '2023'])
 pyplot.legend()
   
 pyplot.show()

@@ -89,4 +89,4 @@ pyplot.title("Prediction of Ransomware Payment in Crypto Currency Per Year")
 pyplot.show()
 
 #Save the predicted values as a CSV file
-future_forecast2.to_csv('cryto_ransom_prediction.csv')
+future_forecast2.to_csv('crypto_ransom_prediction.csv')
